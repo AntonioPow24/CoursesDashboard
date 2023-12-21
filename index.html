@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="/LogoAntonioConejo.png">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">BunnyCode</span>
+                    <span class="profession">Web Frontend</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                        <input type="tex" placeholder="Buscar..">
+                </li>
+
+
+                <ul class="menu-links" id="menu-links">
+                    <li class="nav-link active">
+                        <a href="#" data-section="home">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#" data-section="perfil">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Perfil</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="#" data-section="course">
+                            <i class='bx bx-book icon'></i>
+                            <span class="text nav-text">Cursos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#" data-section="foro">
+                            <i class='bx bx-conversation icon'></i>
+                            <span class="text nav-text">Foro</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#" data-section="shop">
+                            <i class='bx bx-cart icon'></i>
+                            <span class="text nav-text">Comprar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">   
+                <li class="">
+                    <a href="#" data-section="logOut">
+                        <i class='bx bx-log-out-circle icon'></i>
+                        <span class="text nav-text">Cerrar Sesion</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun" data-section="logOut">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-tex text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="home module">
+
+        <div class="perfil-module item-module" id="perfil-module">
+            <div class="perfil-name">
+                <span class="name-perfil title-text">ANTONIO ALFONS GARCIA ROMERO</span>
+            </div>
+            <div class="info-perfil">
+                <div class="photo-perfil">
+                    <div class="photo-perfil-container">
+                        <img src="/public/users/conejoUser.jpg" alt="">
+                        <div class="btn-perfil button-module">
+                            <i class='bx bx-camera'></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="data-perfil">
+                    <span class="text" id="profession">Ingeniero de Sistemas e Informática</span>
+                    <span class="text" id="age">22 años</span>
+                    <span class="text" id="courses-perfil">8 cursos</span>
+                    <div>
+                        <button  class="button-module" id="edit">Editar</button>
+                    </div>
+
+                </div>
+                <div class="institutes">
+                    <div class="institute-card" data-institute="1">
+                        <div>
+                            <img src="/public/institutes/UniversidadNacionaldelSanta.jpg" alt="">
+                        </div>
+                        <div class="institute-name">
+                            <span class="text">Universidad Nacional del Santa</span>
+                        </div>
+                    </div>
+
+                    <div class="institute-card" data-institute="2">
+                        <div>
+                            <img src="/public/institutes/UniversidadNacionaldelSanta.jpg" alt="">
+                        </div>
+                        <div class="institute-name">
+                            <span class="text">Universidad Nacional del Santa</span>
+                        </div>
+                    </div>
+
+                    <div class="institute-card" data-institute="3">
+                        <div>
+                            <img src="/public/institutes/UniversidadNacionaldelSanta.jpg" alt="">
+                        </div>
+                        <div class="institute-name">
+                            <span class="text">Universidad Nacional del Santa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="foro-module item-module" id="foro-module">
+            <div>
+                <span class="title-text">FORO</span>
+            </div>
+
+            <div class="foro-cards-container">
+                <div class="foro-card" data-foro-card="1">
+                    <div>
+                        <img src="/public/Forousers/user1.jpg" alt="">
+                    </div>
+                    <div class="info-foro-card">
+                        <p class="text">Nuevo metodo en js? Que formas de usar la funcion flecha utilizan?</p>
+                    </div>
+                </div>
+
+                <div class="foro-card" data-foro-card="2">
+                    <div>
+                        <img src="/public/Forousers/user2.jpg" alt="">
+                    </div>
+                    <div class="info-foro-card">
+                        <p class="text">Nuevo metodo en js? Que formas de usar la funcion flecha utilizan?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all button-module" id="view-all-foro">
+                <span>Ver todo</span>
+            </div>
+        </div>
+
+        <div class="courses-module item-module" id="courses-module">
+            <div class="top-courses-side">
+                <span class="title-text">MIS CURSOS</span>
+                <span class="view-all-courses" id="view-all-courses">Ver todo</span>
+            </div>
+
+            <div class="courses-cards-container">
+                <div class="course-card" data-course-card="1">
+                    <div class="img-course-container">
+                        <img src="/public/courses/reactBanner.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <span class="title-card text">React desde 0</span>
+                        <span class="level-card intermediate-course">Intermedio</span>
+                        <span class="hours-card text">El curso contiene 8h</span>
+                    </div>
+                </div>
+
+                <div class="course-card" data-course-card="2">
+                    <div class="img-course-container">
+                        <img src="/public/courses/javaScriptBanner.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <span class="title-card text">React desde 0</span>
+                        <span class="level-card basico-course">Basico</span>
+                        <span class="hours-card text">El curso contiene 8h</span>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-course-card="3">
+                    <div class="img-course-container">
+                        <img src="/public/courses/AngularBanner.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <span class="title-card text">React desde 0</span>
+                        <span class="level-card basico-course">Basico</span>
+                        <span class="hours-card text">El curso contiene 8h</span>
+                    </div>
+                </div>
+
+                <div class="course-card" data-course-card="4">
+                    <div class="img-course-container">
+                        <img src="/public/courses/reactBanner.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <span class="title-card text">React desde 0</span>
+                        <span class="level-card advance-course">Avanzado</span>
+                        <span class="hours-card text">El curso contiene 8h</span>
+                    </div>
+                </div>
+
+                <div class="course-card" data-course-card="5">
+                    <div class="img-course-container">
+                        <img src="/public/courses/reactBanner.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <span class="title-card text">React desde 0</span>
+                        <span class="level-card intermediate-course">Intermedio</span>
+                        <span class="hours-card text">El curso contiene 8h</span>
+                    </div>
+                </div>
+
+                <div class="course-card" data-course-card="6">
+                    <div class="img-course-container">
+                        <img src="/public/courses/reactBanner.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <span class="title-card text">React desde 0</span>
+                        <span class="level-card advance-course">Avanzado</span>
+                        <span class="hours-card text">El curso contiene 8h</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="shopping-module item-module" id="shopping-module">
+            <div class="news">
+                <ul class="shopping-cards-list">
+                    <li class="shop-card" data-shop-card="1">
+                        <div>
+                            <img src="#" alt="">
+                        </div>
+                        <div class="info-shop-card">
+                            <span class="title-shop-card text">
+                                .NET
+                            </span>
+                            
+                            <span class="level-shop-card">
+                                Intermedio
+                            </span>
+
+                            <span class="hours-shop-card text">
+                                Elcurso contiene 14h
+                            </span>
+                        </div>
+                    </li>
+
+                    <li class="shop-card" data-shop-card="2">
+                        <div>
+                            <img src="#" alt="">
+                        </div>
+                        <div class="info-shop-card">
+                            <span class="title-shop-card text">
+                                .NET
+                            </span>
+                            
+                            <span class="level-shop-card">
+                                Intermedio
+                            </span>
+
+                            <span class="hours-shop-card text">
+                                Elcurso contiene 14h
+                            </span>
+                        </div>
+                    </li>
+
+                    <li class="shop-card" data-shop-card="3">
+                        <div>
+                            <img src="#" alt="">
+                        </div>
+                        <div class="info-shop-card">
+                            <span class="title-shop-card text">
+                                .NET
+                            </span>
+                            
+                            <span class="level-shop-card">
+                                Intermedio
+                            </span>
+
+                            <span class="hours-shop-card text">
+                                Elcurso contiene 14h
+                            </span>
+                        </div>
+                    </li>
+
+                    <li class="shop-card" data-shop-card="4">
+                        <div>
+                            <img src="#" alt="">
+                        </div>
+                        <div class="info-shop-card">
+                            <span class="title-shop-card text">
+                                .NET
+                            </span>
+                            
+                            <span class="level-shop-card">
+                                Intermedio
+                            </span>
+
+                            <span class="hours-shop-card text">
+                                Elcurso contiene 14h
+                            </span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
