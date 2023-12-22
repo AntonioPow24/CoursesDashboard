@@ -25,3 +25,20 @@ const innerMode =()=>{
     let mode = !body.classList.contains('dark')? 'Light Mode': 'Dark Mode'
     modeText.innerText = mode
 }
+
+
+
+let slideInner = document.querySelector('.shopping-cards-list')
+let shopcards = document.querySelectorAll('.shop-card')
+let index=1
+
+console.log(shopcards.length);
+setInterval(()=>{
+    let percentage = index * -100
+    slideInner.style.transform=`translateX(${percentage}%)`
+    index++
+    if(index > shopcards.length-1){
+        index=0
+    }
+
+},5000)

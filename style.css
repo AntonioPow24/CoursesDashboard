@@ -33,6 +33,7 @@
     --text-color-active:#FFF;
     --text-items-color:#6053f4;
     --basic-course:#4F9943;
+    --button-module-hover:#8479fa;
 
             /* Course Colors */
 
@@ -71,8 +72,7 @@ body.dark{
         --text-items-color:#8c86d6;
         --basic-course:#C9F3C2;
         --intermediate-course:#A2D9DD;
-        --advance-course:#EDBBBB;
-        --button-module-hover:#6055dd;
+        --button-module-hover:#6256e1;
 }
 
 
@@ -365,7 +365,8 @@ body.dark .switch::before{
 }
 
 .button-module:hover{
-    background: var(--button-module-hover)!important;
+    background: var(--button-module-hover) !important;
+
 }
 
 
@@ -591,17 +592,85 @@ body.dark .switch::before{
     flex-direction: column;
 }
 
-.course-card .card-info .level-card.basico-course{
+.basico-course{
     color:var(--level-basic-course);
     font-weight: 600;
 }
 
-.course-card .card-info .level-card.intermediate-course{
+.intermediate-course{
     color:var(--level-intermediate-course);
     font-weight: 600;
 }
 
-.course-card .card-info .level-card.advance-course{
+.advance-course{
     color:var(--level-advance-course);
     font-weight: 600;
+}
+
+
+
+
+/* ========= SHOP MODULE ======== */
+
+.shopping-module{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopping-module .news{
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.shopping-module .shopping-cards-list{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 310px;
+    height: 350px;
+    transition: var(--trans-05);
+
+}
+
+.shopping-module .shopping-cards-list .shop-card{
+    flex: 1 0 auto;
+    width: 100%;
+    background: var(--body-color);
+}
+
+.shopping-cards-list .shop-card div:first-child{
+    height: 240px;
+    background: red;
+}
+
+.shopping-cards-list .shop-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+ .shop-card .info-shop-card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 5px;
+    
+ }
+
+
+.shopping-module .shop-button-container .shop-button{
+    background: var(--text-items-color);
+    transition: var(--trans-05);
+    color: var(--buttons-color);
+    font-size: 18px;
+    font-weight: 500;
+    width: 208px;
+    padding: 8px 0;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
 }
