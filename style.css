@@ -128,10 +128,11 @@ body.dark{
     align-items: center;
     transition: var(--trans-05);
 }
-.sidebar li.active{
+.sidebar li.nav-link-active{
     background: var(--text-items-color);
+    transition: var(--trans-05);
 }
-.sidebar li.active .text,.sidebar li.active i{
+.sidebar li.nav-link-active .text,.sidebar li.nav-link-active i{
     color: var(--text-color-active);
 }
 
@@ -322,6 +323,9 @@ body.dark .switch::before{
 
 
 
+
+
+
 /* ========= SECTION ========= */
 
 
@@ -330,7 +334,7 @@ body.dark .switch::before{
 .module{
     position: relative;
     left: var(--open-sidebar);
-    /* height:100vh ; */
+    height:100vh ;
     width: calc(100% - var(--open-sidebar));
     transition: var(--trans-05);
     background: var(--body-color);
@@ -348,6 +352,7 @@ body.dark .switch::before{
     grid-template-rows: 387px 460px ;
     grid-gap: 24px;
 }
+
 
 .home > .item-module{
     background: var(--sidebar-color);
@@ -368,6 +373,15 @@ body.dark .switch::before{
     background: var(--button-module-hover) !important;
 
 }
+
+
+
+
+
+
+
+
+
 
 
 /* ======= PERFIL MODULE ====== */
@@ -673,4 +687,43 @@ body.dark .switch::before{
     border-radius: 14px;
     border: none;
     cursor: pointer;
+}
+
+
+
+
+
+
+/* =============PROFILEEE MODULE ========== */
+
+.profile{
+   display: none;
+    background: red;
+}
+.courses{
+    display: none;
+    background: #14959D;
+}
+
+.foro{
+    display: none;
+    background: #6256e1;
+}
+
+.shop{
+    display: none;
+    background: #C9F3C2;
+}
+/* ========= */
+
+
+
+
+/* DISPLAYS  */
+.module-active{
+    display:grid;
+}
+
+.module-disable{
+    display: none;
 }
